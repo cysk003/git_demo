@@ -316,6 +316,11 @@ if node_section then
         })
         table.insert(outbounds, {
             protocol = "blackhole",
+            settings = {
+                response = {
+                  type = "http"
+                }
+            },
             tag = "blackhole"
         })
         local rules = {}
